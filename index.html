@@ -3,29 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOPO GUY!</title>
+    <title>TOPO GUY 🛰️</title>
 
     <style>
+      
+
       body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-family: monospace;
         justify-content: center;
-        height: 100vh;
-        color: rgb(77, 77, 77);
-        font-family: "Courier New", Courier, monospace;
+        font-size: 1.5rem;
         margin: 0;
         padding: 0;
-        background-image: url("./Topography\ Background\ Pink\ Vector\ 1dark-topo.jpg");
-        background-size: cover;
+      }
+      
+      nav {
+        background-color: yellow;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+        height: 10%;
       }
 
-      h1 {
-        font-size: 4em;
-        color: #f3f3f3;
-        padding: 30px;
-        align-self: start;
-        margin-left: 15px;
+      .nav-item {
+        font-size: 2rem;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        transition: all .3s;
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem 1rem;
+      }
+
+      .nav-item:hover {
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+      }
+
+      .header {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://res.cloudinary.com/bfrest/image/upload/v1532725200/foxridge/DJI_0791.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      .statement {
+        padding: 2rem;
+        margin: 5rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: #f8f8ff;
+        min-width: 30%;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .statement:nth-child(1) {
+        margin-left: -40%;
+      }
+
+      .statement:nth-child(2) {
+        margin-left: -10%;
+      }
+
+      .statement:nth-child(3) {
+        margin-left: 40%;
+      }
+
+      .info {
+        padding: 5rem;
       }
 
       @media (max-width: 600px) {
@@ -38,7 +97,22 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>Coming Soon...</h1>
+    <nav>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Contact</a>
+    </nav>
+   
+    <div class="header">
+      <p class="statement">Site Grading Models</p>
+      <p class="statement">Civil Site Layout</p>
+      <p class="statement">Land Topography Maps</p>
+    </div>
+
+    <div >
+      <p class="info">To request a model or inquire more information about our services, contact us <a href="mailto:freston75@gmail.com">here</a></p>
+    </div>
   </body>
 </html>
