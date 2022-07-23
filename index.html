@@ -87,12 +87,51 @@
         padding: 5rem;
       }
 
-      @media (max-width: 600px) {
-        body {
-          background-origin: l;
+      @media (min-width: 320px) {
+        .statement, .info, .nav-item {
+          font-size: 1rem
         }
-        h1 {
-          font-size: 2em;
+
+        .nav-item {
+          font-size: 1.2rem;
+        }
+      }
+
+        @media (min-width: 481px) {
+        .statement, .info, .nav-item {
+          font-size: 1rem
+        }
+
+        .statement {
+          padding: 1rem;
+        }
+
+        .nav-item {
+          font-size: 1.2rem;
+        }
+      }
+
+        @media (min-width: 769px) {
+        .statement, .info, .nav-item {
+          font-size: 1rem
+        }
+
+        .nav-item {
+          font-size: 1.3rem;
+        }
+      }
+
+        @media (min-width: 1025px) {
+        .statement, .info, .nav-item {
+          font-size: 1.8rem
+        }
+        
+        .statement {
+          padding: 2rem;
+        }
+
+        .nav-item {
+          font-size: 2rem;
         }
       }
     </style>
